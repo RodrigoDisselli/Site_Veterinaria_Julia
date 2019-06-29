@@ -1,0 +1,502 @@
+body{
+    font-family: 'Open Sans';
+    color: #333333;
+    margin: 0px;
+}
+
+button, button:hover, button:focus , button:after, button:active{
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+    outline: inherit;
+    z-index: 1000;
+}
+
+.header{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.local-header{
+    font-weight: 350;
+}
+
+.local-header .material-icons{
+    font-size: 14px;
+    color: #FA5F72;
+}
+
+
+
+.button{
+    border-radius: 30px;
+    width: 350px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.agendar-consulta{
+    background-color: #FA5F72 !important;  
+    text-transform: uppercase;
+    color: white;
+    margin-top: 30px;
+}
+
+
+.navbar{
+    position: absolute;
+    width: calc(100vw - 20px);
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9000;
+    
+}
+
+.navbar .img-logo{
+    margin-left: 5%;
+}
+
+.navbar .instagram{
+    margin-right: 5%;
+    margin-left: 5%;
+    
+}
+
+.navbar .instagram a img{
+    margin-right: 5px;
+    
+}
+
+.navbar .instagram a{
+    color: #333333;
+}
+
+.title-header{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 32px;
+    text-align: center;
+    max-width: 450px;
+}
+
+.name-header{
+    font-weight: 350;
+    font-size: 24px;
+}
+
+.img-logo-mobile{
+    margin-bottom: 20px;
+    display: none;
+}
+
+.background-img{
+    position: absolute;
+    bottom: 0px;
+    margin:0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.background-img .img-left{
+    height: auto;
+    margin-bottom: -20px;
+}
+
+.depoimento{
+    width: 100%;
+    background-color: #FEFEFE;
+    height: 125px;
+    border-top: 2px solid #DEDEDE;
+    border-bottom: 2px solid #DEDEDE;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ----------------------SERVIÇOS----------------------- */
+
+
+.servicos{
+    background-color: #F6F6F6;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1000px;
+    border-top: 1px solid #ddd;
+}
+
+.servicos .title-servicos{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+}
+
+.servicos .card-servicos-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.servicos .card-servicos{
+    height: 150px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.card-servicos .title-card-servico{
+    text-align: center;
+    font-weight: 800;
+    font-size: 16px;
+    margin-top: 5px;
+    max-width: 150px;
+}
+
+
+/* ----------------------CONTATO----------------------- */
+
+.contato{
+    position: relative;
+}
+
+.contato .content-left{
+    background-image: linear-gradient(#FA5F72, #C23370);
+    padding-top: 50px;
+    padding-bottom: 165px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.contato .content-right{
+    overflow: hidden;
+}
+
+.contato .content-left .title-contato{
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 1em;
+}
+
+.contato .content-left .title-big-contato{
+    font-size: 132px;
+    font-weight: 500;
+    line-height: 1em;
+}
+
+.contato .content-right{
+    background-image: url("../images/contact/img-contato.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+    overflow: visible;
+}
+
+.contato .card-contato{
+    margin: 10%;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    max-width: 80%;
+    margin-left: -20%;
+    height: 300px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+    
+}
+
+.contato .img-btn-whats{
+    width: 16px;
+    margin-right: 5px;
+}
+
+.contato .btn-whats{
+    width: 80%;
+    height: 40px;
+    color: #32BE8B;
+    font-weight: 600;
+    font-size: 14px;
+    border: 1px solid #32BE8B;
+    background-color: #ffffff;
+    margin-top: 50px;
+}
+
+.contato .title-card-contato{
+    font-weight: 900;
+}
+
+.contato .phone-card-contato{
+    font-weight: 300;
+    letter-spacing: 0.12em;
+    font-size: 28px;
+}
+
+.contato .material-icons{
+    margin-right: 5px;
+}
+
+/* --------------------------- INSTAGRAM ---------------- */
+
+.section-instagram{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    width:  100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-instagram .img-instagram{
+    margin-right: 20px;
+}
+
+.section-instagram .head-instagram .title-instagram{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    color: #F45A72;
+}
+
+.container-instagram {
+    display: flex;
+}
+
+.section-instagram .checklist-instagram li .material-icons{
+    color: #32BE8B;
+    font-size: 22px;
+}
+
+.section-instagram .checklist-instagram li{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+
+/* ------------------------- FOOTER ------------------ */
+
+
+.footer{
+    background-color: #000000;
+    color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-footer{
+    width: 20px;
+}
+
+.title-footer{
+    font-size: 14px;
+    font-weight: 200;
+    margin-left: 40px;
+}
+
+.natus-footer{
+    font-size: 20px;
+    line-height: 20px;
+    color: white;
+}
+
+
+/* ----------------------- HOVER -------------- */
+
+.agendar-consulta:hover{
+    background-color: #C23370;
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: .3s; 
+}
+
+.agendar-consulta:visited, .agendar-consulta:active, .agendar-consulta:focus{
+    background-color: #FA5F72 !important;
+    font-weight: 600;
+    font-size: 14px;
+    transition: .3s;
+}
+
+
+.btn-whats:hover{
+    font-weight: 600;
+    font-size: 14px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition: .3s; 
+}
+
+
+
+
+
+/* ------------------------ FULL HD ------------------ */
+
+
+@media only screen and (min-width: 1366px) {
+    .header{
+        min-height: 65vh;
+    }
+}
+
+
+/* ------------------------------MOBILE-------------- */
+
+
+@media only screen and (max-width: 1200px) {
+    .contato .card-contato{
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .background-img .img-left{
+        display: none;
+        height: 50px;
+    }
+
+    .agendar-consulta{
+        width: 280px;
+    }
+
+    .local-header{
+        margin-top: 10px;
+    }
+
+    .title-header{
+        font-size: 16px;
+        max-width: 300px;
+    }
+    
+    .name-header{
+        font-size: 14px;
+    }
+
+    .header{
+        min-height: 100vh;
+    }
+
+    .background-img{
+        flex-direction: row-reverse;
+    }
+    
+    .background-img .img-right{
+        width: 235px;
+    }
+
+    .navbar .img-logo{
+        display: none;
+    }
+
+    .img-logo-mobile{
+        display: block;
+    }
+
+
+    /* ----------------------CONTATO----------------------- */
+
+
+    .contato .content-left{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    .contato .content-left .title-contato{
+        font-size: 32px;
+    }
+    
+    .contato .content-left .title-big-contato{
+        font-size: 64px;
+    }
+
+    .contato .phone-card-contato{
+        font-weight: 300;
+        letter-spacing: 0.12em;
+        font-size: 18px;
+    }
+
+    .contato .material-icons{
+        font-size: 20px;
+    }
+
+    .contato .btn-whats{
+        margin-top: 30px;
+    }
+
+    .contato .card-contato{
+        height: 200px;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    /* -------------------- INSTAGRAM ------------ */
+
+    .section-instagram{
+        padding: 10%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    
+    .section-instagram .img-instagram{
+    }
+    
+    .section-instagram .head-instagram .title-instagram{
+        font-size: 18px;
+        
+    }
+    
+    .container-instagram {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .section-instagram .checklist-instagram li .material-icons{
+        color: #32BE8B;
+        font-size: 22px;
+    }
+    
+    .section-instagram .checklist-instagram li{
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    
+}
